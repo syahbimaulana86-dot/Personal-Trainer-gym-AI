@@ -1,8 +1,7 @@
+import os
 from groq import Groq
-import os   
 
-# Disarankan pakai environment variable
-# export GROQ_API_KEY="gsk_xxxxxxxxxxxxxxxxxxxxx"
+# Ambil key dari environment variablep
 client = Groq(
     api_key=os.environ.get("GROQ_API_KEY")
 )
